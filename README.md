@@ -2,8 +2,8 @@
 
 ## Clonar el repositorio.
 ```
-git clone https://github.com/ivolato/desafio_5_docker.git
-cd desafio_5_docker
+git clone https://github.com/ivolato/desafio-8-k8s.git
+cd desafio-8-k8s
 ```
 
 ## Instalar kompose
@@ -50,4 +50,9 @@ kubectl apply -f mongo-pv.yaml
 ## Aplicamos los manifiesto de Kubernetes.
 ```
 kubectl apply -f ./kubernetes
+```
+## Reseteamos el Deploy de Nestjs para que la imagen cargue correctamente.
+Esperar unos minutos para lanzar el siguiente comando de reset.
+```
+kubectl rollout restart deployment nestjs
 ```

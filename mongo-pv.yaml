@@ -4,11 +4,11 @@ metadata:
   name: mongo-pv
 spec:
   capacity:
-    storage: 1Gi  # Asegúrate de que este tamaño coincida con la solicitud de tu PVC
+    storage: 1Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: standard
   hostPath:
-    path: "/mnt/data"  # Cambia esto por un directorio existente en tu máquina
+    path: "/mnt/data"
